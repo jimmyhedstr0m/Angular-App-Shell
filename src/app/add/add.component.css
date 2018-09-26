@@ -1,0 +1,32 @@
+.paste-area-container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  background-color: #f8f8f8;
+  border-radius: 4px;
+}
+
+.paste-area {
+  width: 100%;
+  height: 100%;  
+  background: transparent;
+  border: 2px dashed #bbbbbb;
+  border-radius: 4px;
+  color: transparent;  
+}
+
+.paste-area:focus {
+  outline: none;
+  border-color: #ff2d55;
+}
+
+.paste-area-text {
+  position: absolute;
+  width: 100%;
+  text-align: center;
+  font-size: 14px;
+  color: rgba(60, 60, 60, 0.7);
+}

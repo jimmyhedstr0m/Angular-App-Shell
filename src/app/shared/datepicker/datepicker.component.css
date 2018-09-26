@@ -1,0 +1,41 @@
+button {
+  width: 40px;
+  height: 40px;
+  padding: 0;
+}
+
+h3 {
+  margin: 0;
+}
+
+table {
+  width: 100%;
+}
+
+td {
+  text-align: center;
+  color: #000;
+}
+
+td span {
+  padding: 4px;
+}
+
+.overflow {
+  color: #b3b3b3;
+}
+
+.today {
+  color: #ff2d55;
+}
+
+.top-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 4px;
+}
+
+.month-arrow {
+  font-size: 14px;
+}

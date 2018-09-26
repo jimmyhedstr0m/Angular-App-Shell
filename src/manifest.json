@@ -1,0 +1,47 @@
+{
+  "short_name": "WA",
+  "name": "Wrap App",
+  "start_url": "/",
+  "theme_color": "#ff2d55",
+  "background_color": "#ffffff",
+  "description": "An app to post whatever you want to your group wall",
+  "display": "standalone",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "/assets/icons/Icon-48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/Icon-72.png",
+      "sizes": "72x72",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/Icon-100.png",
+      "sizes": "100x100",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/Icon-144.png",
+      "sizes": "144x144",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/Icon-167.png",
+      "sizes": "167x167",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/Icon-196.png",
+      "sizes": "196x196",
+      "type": "image/png"
+    },
+    {
+      "src": "/assets/icons/Icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

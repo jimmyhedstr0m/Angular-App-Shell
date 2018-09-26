@@ -1,0 +1,18 @@
+<!-- <br />
+<textarea autofocus="true" placeholder="What's happening?"></textarea>
+
+<input type="submit" value="Add" class="btn"> -->
+
+<div class="inner-container">
+  <img *ngIf="imgSrc" [src]="imgSrc" style="max-width: 100%;" />
+  <div *ngIf="!imgSrc" class="paste-area-container">
+    <span class="paste-area-text">Paste image here</span>
+    <div class="paste-area" contenteditable="true" (paste)="paste($event)"></div>
+  </div>
+  <!-- <textarea class="paste-area" contenteditable="true" [readonly]="false" (paste)="paste($event)"></textarea> -->
+  <!-- <input class="paste-area" />
+  <img id="img"> -->
+  <!-- <textarea (click)="drop($event)"></textarea> -->
+  <!-- <button class="button button-block" (click)="drop($event)">Knapp</button> -->
+  <app-fab></app-fab>
+</div>

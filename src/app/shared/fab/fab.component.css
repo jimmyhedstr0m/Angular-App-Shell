@@ -1,0 +1,50 @@
+.fab {
+  position: absolute;
+  display: block;
+  text-align: center;
+  border-radius: 50%;
+  z-index: 0;
+  overflow: hidden;
+  width: 56px;
+  height: 56px;
+  font-size: 14px;
+  line-height: 56px;
+  text-overflow: ellipsis;
+  text-transform: none;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: background-color, opacity .1s linear;
+  background-clip: padding-box;
+  font-kerning: none;
+  user-select: none;
+  contain: strict;
+  border: none;
+}
+
+.fab.top-right {
+  top: 12px;
+  right: 12px;
+} 
+
+.fab.bottom-right {
+  bottom: 12px;
+  right: 12px;
+}
+
+.fab.top-left {
+  top: 12px;
+  left: 12px;
+} 
+
+.fab.bottom-left {
+  bottom: 12px;
+  left: 12px;
+}
+
+.fab-icon {
+  font-size: 24px;
+  top: -2px;
+  vertical-align: middle;
+  position: relative;
+  color: white;
+}
