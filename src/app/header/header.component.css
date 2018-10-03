@@ -8,6 +8,7 @@
   height: 44px;
   background: #f8f8f8;
   border-bottom: 1px solid #e8e8e8;
+  padding-top: max(12px, env(safe-area-inset-top));
 }
 
 .toolbar {

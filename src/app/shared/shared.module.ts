@@ -6,6 +6,9 @@ import { SearchbarComponent } from './search-bar/search-bar.component';
 import { FabComponent } from './fab/fab.component';
 import { DatepickerComponent } from './datepicker/datepicker.component';
 import { DatepickerService } from './datepicker/datepicker.service';
+import { ModalContainerComponent } from './modal/modal-container.component';
+import { ModalComponent } from './modal/modal.component';
+import { ModalService } from './modal/modal.service';
 
 @NgModule({
   imports: [
@@ -15,13 +18,17 @@ import { DatepickerService } from './datepicker/datepicker.service';
     CardComponent,
     SearchbarComponent,
     FabComponent,
-    DatepickerComponent
+    DatepickerComponent,
+    ModalContainerComponent,
+    ModalComponent
   ],
   exports: [
     CardComponent,
     SearchbarComponent,
     FabComponent,
-    DatepickerComponent
+    DatepickerComponent,
+    ModalContainerComponent,
+    ModalComponent
   ]
 })
 export class SharedModule {
@@ -29,7 +36,8 @@ export class SharedModule {
     return {
       ngModule: SharedModule,
       providers: [
-        DatepickerService
+        DatepickerService,
+        ModalService
       ]
     };
   }

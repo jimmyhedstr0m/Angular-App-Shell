@@ -1,7 +1,7 @@
 .tab-bar {
   display: flex;
   width: 100%;
-  height: 49px;
+  height: calc(49px + max(12px,env(safe-area-inset-bottom)));
   position: absolute;
   z-index: 10;
   left: 0;
@@ -9,6 +9,7 @@
   background: #f8f8f8;
   border-top: 1px solid #e8e8e8;
   user-select: none;
+  padding-bottom: max(12px, env(safe-area-inset-bottom));
 }
 
 .tab-button {
@@ -71,7 +72,7 @@
 
 .scroll-content {
   display: block;
-  position: absolute;
+  position: fixed;
   z-index: 1;
   left: 0;
   right: 0;
@@ -83,5 +84,5 @@
   will-change: scroll-position;
   contain: size style layout;
   margin-top: 44px;
-  margin-bottom: 49px;
+  margin-bottom: calc(49px + max(12px,env(safe-area-inset-bottom)));
 }

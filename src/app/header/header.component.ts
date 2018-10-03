@@ -17,9 +17,7 @@ export class HeaderComponent implements OnInit, OnDestroy {
 
   ngOnInit() {
     this.tabSubsriber = this.tabsService.getActiveTab()
-      .subscribe((tab: TabComponent) => {
-        this.title = tab.tabTitle;
-      });
+      .subscribe((tab: TabComponent) => this.title = tab.tabTitle);
   }
 
   ngOnDestroy() {

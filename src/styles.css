@@ -4,17 +4,16 @@
 }
 
 html, body {
+  height: 100%;
+  width: 100%;
   margin: 0px;
   padding: 0px;
-  width: 100%;
   overflow: hidden;
 }
 
 body {
   position: fixed;
-  overflow: hidden;
   max-width: 100%;
-  height: 100%;
   max-height: 100%;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
@@ -112,9 +111,7 @@ textarea,
 }
 
 @supports(padding: max(0px)) {
-  .inner-container {
-    padding-top: max(12px, env(safe-area-inset-top));
-    padding-bottom: max(12px, env(safe-area-inset-bottom));
+  .inner-container {    
     padding-left: max(12px, env(safe-area-inset-left));
     padding-right: max(12px, env(safe-area-inset-right));
   }
