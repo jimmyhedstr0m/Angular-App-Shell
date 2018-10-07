@@ -21,12 +21,17 @@ export class ModalService {
     return this.modalsSubject.asObservable();
   }
 
-  close(currentModal: ModalComponent) {
-    const index = this.modalsQueue.findIndex((modal: ModalComponent) => modal === currentModal);
-    if (index > -1) {
-      this.modalsQueue.splice(index, 1);
-      this.modalsSubject.next(this.modalsQueue);
+  close(currentModal?: ModalComponent) {
+    if (currentModal) {
+      const index = this.modalsQueue.findIndex((modal: ModalComponent) => modal === currentModal);
+      if (index > -1) {
+        this.modalsQueue.splice(index, 1);
+      }
+    } else {
+      this.modalsQueue.pop();
     }
+
+    this.modalsSubject.next(this.modalsQueue);
   }
 
   closeAll() {

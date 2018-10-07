@@ -34,8 +34,8 @@ export class ModalContainerComponent implements OnInit, OnDestroy {
     this.modalsSubscription.unsubscribe();
   }
 
-  close() {
-    console.log('todo close');
+  close(modal: ModalComponent) {
+    this.modalService.close(modal);
   }
 
 }
